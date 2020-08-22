@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Roberto Moya">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css"/>
+    <title>3</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #3D3D3D;
+        }
+
+        .container {
+            display: flex;
+            height: 91vh;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 2px solid black;
+            width: 50%;
+            margin: 0 auto;
+
+        }
+
+        .logo {
+            width: 20%;
+        }
+
+        .menu {
+            width: 80%;
+        }
+
+        .logo-image {
+            width: 100px;
+            padding-left: 30px;
+        }
+
+        .menu-items {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            list-style-type: none;
+            padding-right: 20px;
+        }
+
+        .burger {
+            display: none;
+        }
+
+        .menu-items > li > a {
+            text-decoration: none;
+            color: black;
+            font-family: 'Roboto Mono', monospace;
+            padding: 0 10px;
+        }
+
+        .menu-items > li > a:hover {
+            background-color: black;
+            color: white;
+        }
+
+        @media only screen and (max-width: 1100px) {
+            .menu-items {
+                display: none;
+            }
+
+            .burger {
+                display: block;
+                color: black;
+                padding-right: 30px;
+            }
+        }
+
+        .link {
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            padding: .5em 1em;
+            font-family: 'Roboto Mono', monospace;
+            text-align: center;
+            border: 2px solid black;
+            transition: .2s;
+
+        }
+
+        .link:hover {
+            background-color: #1d1d23;
+            color: white;
+            border: white 2px solid;
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <nav class="nav-container">
+        <div class="logo">
+            <img class="logo-image" src="spaceship.svg" alt="">
+        </div>
+        <div class="menu">
+            <ul class="menu-items">
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Entrevistas</a></li>
+                <li><a href="">Música</a></li>
+                <li><a href="">Tendencias</a></li>
+            </ul>
+        </div>
+        <div class="burger">
+            <i class="fas fa-bars fa-2x"></i>
+        </div>
+    </nav>
+</div>
+<div class="links">
+    <a class="link link-start" href="ejercicio-2.html">Volver</a>
+    <a class="link" href="index.html"><i class="fas fa-home"></i></a>
+    <a class="link link-end" href="ejercicio-4.html">Siguente</a>
+</div>
+</body>
+</html>

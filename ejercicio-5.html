@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Roberto Moya">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css"/>
+    <title>5</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #3D3D3D;
+        }
+
+        .container {
+            height: 88vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .images {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            align-content: start;
+            flex-wrap: wrap;
+            width: 55em;
+            height: 54em;
+        }
+
+
+        .images > img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+        }
+
+        .images > img:nth-child(5) {
+            width: 100%;
+            height: 300px;
+        }
+
+        .images > img:nth-child(7) {
+            height: 300px;
+        }
+
+        .images > img:nth-child(9) {
+            height: 300px;
+        }
+
+        @media only screen and (max-width: 883px) {
+            .container {
+                height: 100%;
+            }
+
+            .images {
+                display: flex;
+                align-content: start;
+                padding: 0 2%;
+            }
+
+            .images > img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                margin: 10px;
+            }
+
+            .images > img:nth-child(5) {
+                width: 100%;
+                height: 200px;
+            }
+
+            .images > img:nth-child(7) {
+                height: 200px;
+            }
+
+            .images > img:nth-child(9) {
+                height: 200px;
+            }
+        }
+
+        .link {
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            padding: .5em 1em;
+            font-family: 'Roboto Mono', monospace;
+            text-align: center;
+            border: 2px solid black;
+            transition: .2s;
+
+        }
+
+        .link:hover {
+            background-color: #1d1d23;
+            color: white;
+            border: white 2px solid;
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="images">
+        <img src="https://images.unsplash.com/photo-1515361272650-f432a9320bd8" alt="">
+        <img src="https://images.unsplash.com/photo-1533050487297-09b450131914" alt="">
+        <img src="https://images.unsplash.com/photo-1480796927426-f609979314bd" alt="">
+        <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186" alt="">
+        <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9" alt="">
+        <img src="https://images.unsplash.com/photo-1509023464722-18d996393ca8" alt="">
+        <img src="https://images.unsplash.com/photo-1513171920216-2640b288471b" alt="">
+        <img src="https://images.unsplash.com/photo-1493780474015-ba834fd0ce2f" alt="">
+        <img src="https://images.unsplash.com/photo-1512692723619-8b3e68365c9c" alt="">
+    </div>
+</div>
+
+<div class="links">
+    <a class="link link-start" href="ejercicio-4.html">Volver</a>
+    <a class="link" href="index.html"><i class="fas fa-home"></i></a>
+    <a class="link link-end" href="ejercicio-1.html">Siguente</a>
+</div>
+
+</body>
+</html>
